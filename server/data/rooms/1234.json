@@ -1,0 +1,9 @@
+{
+  "canvas": {
+    "objects": [],
+    "background": "#ffffff",
+    "gridSize": 20,
+    "snapToGrid": false
+  },
+  "history": []
+}

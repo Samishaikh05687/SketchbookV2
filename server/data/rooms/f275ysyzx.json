@@ -1,0 +1,32 @@
+{
+  "canvas": {
+    "objects": [
+      {
+        "id": "sgy0u9jia",
+        "type": "rectangle",
+        "x": 864.0078569606527,
+        "y": -48.98986273174103,
+        "width": 419.0038102621684,
+        "height": 375.00556492941655,
+        "fill": "#841111",
+        "stroke": "#000000",
+        "strokeWidth": 17,
+        "opacity": 1
+      },
+      {
+        "id": "hgxbkq748",
+        "type": "rectangle",
+        "x": 723.0065747483239,
+        "y": 232.0143072553684,
+        "width": -571.0051925052462,
+        "height": 364.005401691487,
+        "fill": "#841111",
+        "stroke": "#000000",
+        "strokeWidth": 1,
+        "opacity": 1
+      }
+    ],
+    "background": "#ffffff"
+  },
+  "history": []
+}
