@@ -49,7 +49,7 @@ export function useSocket(roomId: string | null) {
       updateUserCursor(userId, cursor);
     });
 
-    socket.on('history-update', (action: HistoryAction) => {
+    socket.on('history-update', ( HistoryAction) => {
       addToHistory();
     });
 

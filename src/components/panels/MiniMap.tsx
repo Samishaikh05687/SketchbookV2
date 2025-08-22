@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Stage, Layer, Rect, Circle, Line } from 'react-konva';
 import { useCanvasStore } from '../../stores/canvas-store';
 import Draggable, { DraggableData, DraggableEvent } from 'react-draggable';

@@ -36,7 +36,7 @@ function Dashboard() {
   };
 
   const handleCreateRoom = () => {
-    if (!name) return alert('Please enter your name');
+    if (!name) return "null";
     const newRoomId = roomId || generateId();
     const newRoom: Room = {
       id: newRoomId,
@@ -101,7 +101,7 @@ function Dashboard() {
                     <a href="/" className="hover:text-orange-600">About</a>
                    
                     <a href="/" className="hover:text-orange-600">How it works</a>
-                    <Link to="/support" className="hover:text-orange-600">Support</Link>
+                    <Link to="/" className="hover:text-orange-600">Support</Link>
                 </nav>
                 
             </div>
@@ -173,43 +173,79 @@ function Dashboard() {
               className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
             >
               <motion.div
-                variants={modalVariants}
-                initial="hidden"
-                animate="visible"
-                className="bg-white rounded-xl p-8 w-full max-w-md border border-orange-200"
-              >
-                <h2 className="text-2xl font-bold text-orange-600 mb-6">Create or Join Room</h2>
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 mb-4 focus:ring-2 focus:ring-orange-500 outline-none transition-all"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                  type="text"
-                  placeholder="Room ID (optional)"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 mb-6 focus:ring-2 focus:ring-orange-500 outline-none transition-all"
-                  value={roomId}
-                  onChange={(e) => handleRoomChange(e.target.value)}
-                />
-                <div className="flex justify-end space-x-4">
-                  <button
-                    onClick={() => setIsModalOpen(false)}
-                    className="px-4 py-2 text-gray-600 hover:text-gray-800"
-                  >
-                    Cancel
-                  </button>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={handleCreateRoom}
-                    className="px-6 py-2 bg-orange-500 text-white rounded-lg font-medium hover:bg-orange-600 transition-colors"
-                  >
-                    Join Room
-                  </motion.button>
-                </div>
-              </motion.div>
+  variants={modalVariants}
+  initial="hidden"
+  animate="visible"
+  className="bg-white rounded-2xl p-8 w-full max-w-md border border-orange-200 shadow-lg"
+>
+    <div className='flex justify-between'>
+  <div>
+
+  <h2 className="text-2xl font-serif text-gray-600 ">Create or Join Room</h2>
+  <div className="w-24 h-1 bg-orange-200 rounded-full mb-6"></div>
+  </div>
+  <button
+        type="button"
+        onClick={() => setIsModalOpen(false)}
+        className="px-5 py-2.5 -translate-y-10 translate-x-7 text-red-600 text-lg font-bold rounded-lg  hover:scale-105 transition-colors duration-200"
+        >
+       X
+      </button>
+          </div>
+  <form className="space-y-5">
+    <div>
+      <label
+        htmlFor="name"
+        className="block text-sm font-medium text-gray-700 mb-1.5"
+      >
+        Your Name
+      </label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+        className="w-full border border-gray-300 rounded-full px-4 py-3 text-gray-800 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 outline-none transition-all duration-300 bg-gray-50"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        required
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="roomId"
+        className="block text-sm font-medium text-gray-700 mb-1.5"
+      >
+        Room ID (optional)
+      </label>
+      <input
+        id="roomId"
+        type="text"
+        placeholder="Enter room ID"
+        className="w-full border border-gray-300 rounded-full px-4 py-3 text-gray-800 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 outline-none transition-all duration-300 bg-gray-50"
+        value={roomId}
+        onChange={(e) => handleRoomChange(e.target.value)}
+      />
+    </div>
+    <div className="flex justify-end space-x-4 pt-2">
+      <button
+        type="button"
+        onClick={() => setIsModalOpen(false)}
+        className="px-5 py-2.5 text-gray-600 font-medium rounded-lg hover:bg-gray-100 hover:text-gray-800 transition-colors duration-200"
+      >
+        Cancel
+      </button>
+      <motion.button
+        type="button"
+        whileHover={{ scale: 1.03 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={handleCreateRoom}
+        className="px-6 py-2.5 bg-orange-500 text-white rounded-lg font-medium hover:from-orange-600  transition-all duration-200 shadow-md"
+      >
+        Join Room
+      </motion.button>
+    </div>
+  </form>
+</motion.div>
             </motion.div>
           )}
         </div>

@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { subscribeWithSelector } from 'zustand/middleware';
-import { CanvasObject, CanvasState, Tool, User, HistoryAction, Point } from '../types/canvas';
-import { generateId } from '../lib/utils';
+import { CanvasObject, CanvasState, Tool, User, Point } from '../types/canvas';
+
 
 interface CanvasStore {
   // Canvas state

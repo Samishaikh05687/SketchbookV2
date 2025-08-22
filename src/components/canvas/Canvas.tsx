@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react';
+import  { useRef, useEffect, useState, useCallback } from 'react';
 import { Stage, Layer, Rect, Circle, Line, Text, Arrow, RegularPolygon, Group } from 'react-konva';
 import { KonvaEventObject } from 'konva/lib/Node';
 import Konva from 'konva';
@@ -32,7 +32,7 @@ export function Canvas({ roomId }: CanvasProps) {
   const {
     canvas,
     selectedTool,
-    selectedObjects,
+    
     scale,
     position,
     showGrid,

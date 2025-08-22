@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { motion, useInView, Variants, Transition } from 'framer-motion';
 
 function StepsSection() {

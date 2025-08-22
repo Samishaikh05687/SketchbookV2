@@ -1,6 +1,83 @@
 {
   "canvas": {
-    "objects": [],
+    "objects": [
+      {
+        "id": "msim8vob1",
+        "type": "line",
+        "x": 0,
+        "y": 0,
+        "points": [
+          584.8043403687647,
+          319.97320590570075,
+          660.7766290110749,
+          168.0294156065179
+        ],
+        "stroke": "#000000",
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      {
+        "id": "qbij8cefb",
+        "type": "star",
+        "x": 1390.9487149894373,
+        "y": 429.19011439400356,
+        "width": 50.983956875570016,
+        "height": 50.983956875570016,
+        "fill": "#ffffff",
+        "stroke": "#000000",
+        "strokeWidth": 1,
+        "opacity": 1,
+        "numPoints": 5,
+        "innerRadius": 12.745989218892504,
+        "outerRadius": 25.491978437785008
+      },
+      {
+        "id": "h245yxlnv",
+        "type": "star",
+        "x": 1414.4520792546248,
+        "y": 378.20615751843354,
+        "width": 64.00146884520245,
+        "height": 64.00146884520245,
+        "fill": "#ffffff",
+        "stroke": "#000000",
+        "strokeWidth": 1,
+        "opacity": 1,
+        "numPoints": 5,
+        "innerRadius": 16.000367211300613,
+        "outerRadius": 32.00073442260123
+      },
+      {
+        "id": "9wtf0hkqv",
+        "type": "arrow",
+        "x": 0,
+        "y": 0,
+        "points": [
+          0,
+          0,
+          1112.7473588332223,
+          -151.79687199866973
+        ],
+        "stroke": "#000000",
+        "strokeWidth": 2,
+        "opacity": 1,
+        "fill": "#000000"
+      },
+      {
+        "id": "ze2lyl0xz",
+        "type": "star",
+        "x": 842.1667403924253,
+        "y": 163.87888115512166,
+        "width": 241.2677181097107,
+        "height": 241.2677181097107,
+        "fill": "#3B82F6",
+        "stroke": "#000000",
+        "strokeWidth": 2,
+        "opacity": 1,
+        "numPoints": 5,
+        "innerRadius": 60.316929527427675,
+        "outerRadius": 120.63385905485535
+      }
+    ],
     "background": "#ffffff"
   },
   "history": []

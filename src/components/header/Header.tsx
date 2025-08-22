@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { 
   Users, 
   Share2, 
   Download, 
   Upload, 
-  Settings, 
   Undo2, 
   Redo2,
   Grid3x3,
