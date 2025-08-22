@@ -12,7 +12,7 @@ import StepsSection from "./StepsSection";
 
 export default function LandingPage() {
     return (
-        <div className="h-screen flex flex-col ">
+        <div className="h-screen flex flex-col m-5 ">
 
             <Navbar />
             {/* Hero */}

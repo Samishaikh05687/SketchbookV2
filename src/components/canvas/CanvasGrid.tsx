@@ -4,7 +4,7 @@ import { useCanvasStore } from "../../stores/canvas-store";
 
 export function CanvasGrid() {
   const { canvas, position, scale } = useCanvasStore();
-  const gridSize = canvas.gridSize || 50; // default if not set
+  const gridSize = canvas.gridSize || 40; // default if not set
 
   const lines: JSX.Element[] = [];
 

@@ -89,14 +89,14 @@ function Dashboard() {
     <QueryClientProvider client={queryClient}>
 
         
-        <div>
-    <header className="w-full fixed top-4 z-1000  ">
-            <div className="max-w-4xl  mx-auto rounded-full bg-[#1a1818] backdrop-blur-md border-b border-orange-100 px-1 py-2 flex items-center justify-between">
+        <div className='m-5'>
+    <header className="w-full fixed top-8  z-1000">
+            <div className="max-w-3xl  mx-auto rounded-full bg-[#1a1818] backdrop-blur-md border-b border-orange-100 px-1 py-2 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2">
                     <div className="w-9 h-9 rounded-full bg-gradient-to-r from-orange-500 to-rose-400" />
                     <span className="text-2xl font-sans text-white">SketchBook</span>
                 </Link>
-                <nav className="hidden md:flex items-center gap-6 pr-64 text-lg text-white font-normal">
+                <nav className="hidden md:flex items-center gap-12 pr-14 text-lg text-white font-normal">
                     <a href="/" className="hover:text-orange-600">Home</a>
                     <a href="/" className="hover:text-orange-600">About</a>
                    
@@ -106,7 +106,7 @@ function Dashboard() {
                 
             </div>
         </header>
-      <div className="h-auto mt-[4em] bg-orange-50 rounded-3xl py-12 px-4 ">
+      <div className="h-auto mt-14 bg-orange-50 rounded-3xl py-12 px-4 ">
         <div className="flex flex-col justify-start items-start  mx-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,7 +114,7 @@ function Dashboard() {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="text-center mb-12"
           >
-            <h1 className="text-4xl sm:text-4xl font-bold text-start text-gray-900">
+            <h1 className="text-4xl sm:text-4xl font-medium text-start text-gray-900">
               Welcome to SketchBook !
             </h1>
             <p className="mt-4 text-lg text-gray-600 text-start max-w-[25rem]">
@@ -130,22 +130,22 @@ function Dashboard() {
                 setRoomId(generateId());
                 setIsModalOpen(true);
               }}
-              className="flex items-center bg-opacity-90 bg-gray-300 text-white rounded-2xl px-12 py-12  font-semibold text-lg hover:bg-gray-400"
+              className="flex items-center bg-white border-[3px] border-dashed border-gray-400 text-gray-500 rounded-2xl px-12 py-12 font-semibold text-lg hover:bg-gray-100 transition-colors duration-300"
             >
               <svg
-                className="w-6 h-6 text-gray-900 mr-2"
+                className="w-6 h-6 text-gray-500 mr-2"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
               </svg>
-            <span className='text-gray-900'>Create New Room</span>  
+            <span className='text-gray-600'>Create New Room</span>
             </motion.button>
           </div>
 
           {rooms.length > 0 && (
-            <div className="mt-12">
+            <div className="mt-5">
               <h2 className="text-2xl font-semibold text-gray-900 mb-6">Previous Rooms</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {rooms.map((room) => (
@@ -204,7 +204,7 @@ function Dashboard() {
         id="name"
         type="text"
         placeholder="Enter your name"
-        className="w-full border border-gray-300 rounded-full px-4 py-3 text-gray-800 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 outline-none transition-all duration-300 bg-gray-50"
+        className="w-full border border-gray-300 rounded-full px-4 py-3 text-gray-800 focus:ring-1 focus:ring-orange-200 focus:border-orange-200 outline-none transition-all duration-300 bg-gray-50"
         value={name}
         onChange={(e) => setName(e.target.value)}
         required
@@ -221,7 +221,7 @@ function Dashboard() {
         id="roomId"
         type="text"
         placeholder="Enter room ID"
-        className="w-full border border-gray-300 rounded-full px-4 py-3 text-gray-800 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 outline-none transition-all duration-300 bg-gray-50"
+        className="w-full border border-gray-300 rounded-full px-4 py-3 text-gray-800 focus:ring-1 focus:ring-orange-200 focus:border-orange-200 outline-none transition-all duration-300 bg-gray-50"
         value={roomId}
         onChange={(e) => handleRoomChange(e.target.value)}
       />

@@ -8,11 +8,11 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="p-5">
+    <div className=''>
       <Router>
       
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/"  element={<LandingPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route
             path="/canvas"

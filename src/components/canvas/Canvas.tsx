@@ -576,7 +576,7 @@ export function Canvas({ roomId }: CanvasProps) {
         onWheel={handleWheel}
         onDblClick={handleDoubleClick}
         onContextMenu={(e) => e.evt.preventDefault()}
-        style={{ background: '#fff' }}
+        style={{ }}
       >
         <Layer>
           {showGrid && <CanvasGrid />}
