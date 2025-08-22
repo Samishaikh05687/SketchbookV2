@@ -38,7 +38,7 @@ export default function LandingPage() {
 
                 </section>
                      
-                        <img src="/public/image.png" alt="SketchBook collaborative canvas preview"  className="w-[90%]  h-auto   translate-y-[10%] " />
+                        <img src="/image.png" alt="SketchBook collaborative canvas preview"  className="w-[90%]  h-auto   translate-y-[10%] " />
                   
 
             </main>
